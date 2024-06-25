@@ -404,9 +404,14 @@ body {
 }
 /* задний фон */
 .bg__bloom {
+    display: flex;
+    justify-content: center;
+}
+.bloom__back {
     position: absolute;
     margin-top: 141px;
     z-index: -2;
+    width: 100%;
 }
 /* Блог контента */
 /* Первый стикер*/
