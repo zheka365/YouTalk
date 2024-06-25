@@ -67,13 +67,16 @@ p {
     text-decoration: none;
     color: #333333;
 }
-
+body {
+    overflow-x: hidden;
+    margin: 0 auto;
+}
 /* основная часть */
 .container {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
-    margin-left: 120px;
-    justify-content: center;
+    justify-content: flex-start;
+    display: flex;
 }
 
 .main {
@@ -85,12 +88,13 @@ p {
 
 /* Хэдер */
 .header {
-    max-width: 1440px;
+    width: 1200px;
     height: 76px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #FFFFFF;
+    margin: 0 auto;
 }
 
 .header__liner {
@@ -101,8 +105,7 @@ p {
 
 .header__logo {
     display: flex;
-    margin-left: 120px;
-
+    margin-right: 52px;
     overflow: visible;
     align-items: center;
 }
@@ -230,18 +233,20 @@ p {
     border: 1px solid #eff5fb;
     top: 76px;
     width: 1440px;
+    margin: 0 auto;
 }
 
 /* Ссылки — Главная, блог... */
 .nav {
     min-width: 110px;
     min-height: 18px;
-    margin-top: 14px;
+    margin: 0 auto;
 }
 
 .container__nav-item {
     top: 92px;
-    margin-left: 5px;
+    margin-left: 6px;
+    margin-top: 14px;
 }
 
 .container__item {
@@ -263,15 +268,17 @@ p {
 }
 
 /* Название страницы */
+.blog-h1 {
+    margin: 0 auto;
+}
 .blog {
-    max-width: 552px;
+    width: 1200px;
     min-height: 56px;
-    margin-top: 30px;
-
+    margin: 0 auto;
 }
 
 .blog__h1 {
-    margin: 0;
+    margin-top: 30px;
     padding: 0;
     list-style: none;
     text-decoration: none;
@@ -303,8 +310,6 @@ p {
     flex-direction: row;
     justify-content: space-between;
     gap: 8px;
-    margin: 0;
-    padding: 0;
     z-index: 200;
 }
 
@@ -344,10 +349,9 @@ p {
 
 .blog__emotions {
     display: flex;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
     margin-top: 32px;
-    max-width: 1181px;
+    width: 1200px;
     min-height: 32px;
     justify-content: space-around;
     z-index: 100;
@@ -375,9 +379,9 @@ p {
     z-index: 100;
 }
 
-.blog__sorting div:nth-child(n) {
+/* .blog__sorting div:nth-child(n) {
     margin-right: 0.51em;
-}
+} */
 
 .blog__sorting div:first-child {
     margin-right: 10px;
@@ -407,7 +411,7 @@ p {
 /* Блог контента */
 /* Первый стикер*/
 .content {
-    margin: 24px 24px 24px 0;
+    margin: 24px 0;
 }
 
 .content__list {
@@ -417,7 +421,7 @@ p {
 
     position: relative;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     z-index: 200;
 }
 @media screen and (min-width: 501px) {
@@ -537,7 +541,7 @@ p {
     color: #868686;
     max-width: 61px;
     min-height: 18px;
-    margin-top: 190px;
+    bottom: 10px;
     z-index: 200;
     position: absolute;
 }
@@ -677,7 +681,7 @@ p {
     color: #868686;
     max-width: 61px;
     min-height: 18px;
-    margin-top: 190px;
+    bottom: 10px;
     position: absolute;
 }
 
@@ -695,7 +699,7 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-
+    margin: 0 auto;
 }
 
 .main__container-item {
@@ -854,13 +858,13 @@ p {
     color: #868686;
     min-width: 58px;
     min-height: 18px;
-    margin-top: 24px;
+    bottom: 10px;
     letter-spacing: 0.15px;
     position: absolute;
 }
 
 .text__date-0 {
-    margin-top: -2px;
+    bottom: 10px;
 }
 
 /* третий раздел*/
@@ -1043,13 +1047,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 56px;
-    margin-left: 120px;
+    margin: 0 auto;
 }
 
 .btn__more-link {
     display: flex;
     width: 182px;
+    margin-top: 56px;
 }
 
 .btn__link {
@@ -1320,12 +1324,20 @@ p {
         margin-right: 32px;
     }
     .container {
-        margin-left: 32px;
-        margin-right: 32px;
+        width: 1024px;
+    }
+    .nav {
+        width: 960px;
+    }
+    .blog {
+        width: 960px;
     }
     .blog__sorting {
         flex-wrap: wrap;
         gap: 8px;
+    }
+    .blog__emotions {
+        width: 960px;
     }
     /* первый ряд */
     .content__item,
@@ -1420,7 +1432,7 @@ p {
         min-height: 40px;
     }
     .text__date-0 {
-        margin-top: 100px;
+        bottom: 10px;
     }
 }
 @media screen and (min-width: 1201px) {
@@ -1431,10 +1443,10 @@ p {
     }
     .text__date-12,
     .text__date-22  {
-        margin-top: 24px;
+        bottom: 10px;
     }
     .text__date-02 {
-        margin-top: 20px;
+        bottom: 10px;
     }
     .text__h4-02,
     .text__h4-12,
@@ -1444,11 +1456,11 @@ p {
 }
 
 
-@media screen and (min-width: 1201px) {
+/* @media screen and (min-width: 1201px) {
     .header__logo-logo {
         margin-right: 52px;
     }
-}
+} */
 @media screen and (max-width: 1200px) {
     .btn__more {
         width: 100%;
@@ -1458,20 +1470,23 @@ p {
     .bg__bloom {
         display: none;
     }
+    body {
+        width: 1024px;
+    }
 }
 @media screen and (max-width: 1200px) {
 
     .text__date-02 {
-        margin-top: 30px;
+        bottom: 10px;
     }
     .text__date-0 {
-        margin-top: 10px;
+        bottom: 10px;
     }
     .text__date-1,
     .text__date-12,
     .text__date-2,
     .text__date-22 {
-        margin-top: 40px;
+        bottom: 10px;
     }
 
     .footer__container {
@@ -1511,7 +1526,12 @@ p {
 /* media iPad mini"*/
 /* media iPad mini"*/
 @media screen and (max-width: 900px) {
-
+    .header {
+        width: 768px;
+    }
+    body {
+        width: 768px;
+    }
     .header__menu,
     .header__btn {
         display: none;
@@ -1521,17 +1541,28 @@ p {
         margin: 20px;
     }
     .container {
-        margin: 0 20px;
+        width: 728px;
+    }
+    .nav {
+        width: 728px;
+    }
+    .blog__emotions {
+        width: 728px;
     }
     .blog__sorting {
         flex-wrap: wrap;
         gap: 8px;
+        width: 728px;
     } 
     /* первый ряд */
+    .content {
+        width: 728px;
+        margin: 0 auto;
+    }
     .content__list {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
-        margin: 0;
+        margin-top: 24px;
     }
     .content__item,
     .content__item2 {
@@ -1561,6 +1592,9 @@ p {
     .text__content2 {
         max-width: 696px;
         max-height: 20px;
+    }
+    .text__date-first {
+        bottom: 680px;
     }
     br {
         display: none;
@@ -1611,20 +1645,20 @@ p {
         max-height: 80px;
     }
     .text__date-0 {
-        margin-top: 20px;
+        bottom: 18px;
     }
     .text__date-1 {
-        margin-top: 30px;
+        bottom: 18px;
     }
     .text__date-2 {
-        margin-top: 50px;
+        bottom: 18px;
     }
     .text__date-02 {
-        margin-top: 20px;
+        bottom: 18px;
     }
     .text__date-12,
     .text__date-22 {
-        margin-top: 30px;
+        bottom: 18px;
     }
     .footer__container {
         width: 768px;
@@ -1645,6 +1679,19 @@ p {
 @media screen and (max-width: 500px) {
     .header {
         height: 72px;
+        width: 414px;
+    }
+    .container {
+        width: 374px;
+    }
+    body {
+        width: 414px;
+    }
+    .nav {
+        width: 414px;
+    }
+    .blog__emotions {
+        width: 414px;
     }
     .blog__sorting {
         flex-wrap: nowrap;
@@ -1656,10 +1703,13 @@ p {
         display: none;
     }
     /* первый ряд */
+    .content {
+        width: 414px;
+    }
     .content__list {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
-        margin: 0;
+        margin-top: 16px;
     }
     .content__item,
     .content__item2 {
@@ -1671,9 +1721,11 @@ p {
         max-width: 374px;
         height: 206px;
     }   
-    .text__date,
     .text__date2 {
-        margin-top: 200px;
+        bottom: 10px;
+    }
+    .text__date-first {
+        bottom: 472px;
     }
     .content__blog-item, 
     .content__blog-item2 {
@@ -1738,47 +1790,71 @@ p {
 /* medai iPhone SE "*/
 /* medai iPhone SE "*/
 /* medai iPhone SE "*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .header {
         height: 56px;
+        width: 375px;
+    }
+    .header__line {
+        width: 374px;
+    }
+    body {
+        width: 375px;
+    }
+    .container {
+        width: 350px;
+    }
+    .nav {
+        width: 350px;
+    }
+    .blog {
+        width: 350px;
+    }
+    .blog__emotions {
+        width: 350px;
     }
     .blog__sorting {
-        max-width: 387px;
+        max-width: 3650px;
     } 
     /* первый ряд */
+    .content {
+        width: 350px;
+    }
     .content__item,
     .content__item2 {
-        max-width: 288px;
+        max-width: 350px;
         height: 484px;
     }
     .content__img {
-        max-width: 288px;
+        width: 350px;
         height: 206px;
     }   
-    .text__date,
     .text__date2 {
-        margin-top: 235px;
+        bottom: 10px;
+    }
+    .text__date-first {
+        bottom: 510px;
     }
     .content__blog-item, 
     .content__blog-item2 {
-        max-width: 288px;
+        max-width: 350px;
         min-height: 278px;
     }
     .text__h4,
     .text__h42 {
-        max-width: 256px;
+        max-width: 320px;
         max-height: 130px;
     }
     .text__content,
     .text__content2 {
-        max-width: 256px;
+        max-width: 320px;
     }
 /* Второй ряд */
     .main__container-item {
-        width: 288px;
+        width: 350px;
     }
     .main__img {
-        width: 288px;
+        width: 350px;
         height: 206px;
     }
     .main__item1,
@@ -1787,18 +1863,18 @@ p {
     .main__item12,
     .main__item22,
     .main__item32 {
-        width: 288px;
+        width: 350px;
         min-height: 278px;
     }
 
     .text__h4-02,
     .text__h4-1 {
-        width: 256px;
+        width: 320px;
         height: 130px;
     }
     .text__h4-0 {
         min-height: 130px;
-        width: 256px;
+        width: 320px;
     }
     .text__content-0,
     .text__content-1,
@@ -1806,17 +1882,19 @@ p {
     .text__content-02,
     .text__content-12,
     .text__content-22 {
-        width: 256px;
+        width: 320px;
     }
-    .text__about-author-0,
+    /* .text__about-author-0,
     .text__date-0 {
         margin: 0;
-    }
+    } */
     .text__date-1,
     .text__date-12,
     .text__date-22 {
         bottom: 10px;
     }
+    .text__date-0,
+    .text__date-02,
     .text__date-2 {
         bottom: 10px;
     }
@@ -1853,5 +1931,3 @@ p {
         height: 746px;
     }
 }
-
-
