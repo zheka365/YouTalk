@@ -232,7 +232,7 @@ body {
 .header__line {
     border: 1px solid #eff5fb;
     top: 76px;
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -1799,9 +1799,6 @@ body {
     .header {
         height: 56px;
         width: 375px;
-    }
-    .header__line {
-        width: 374px;
     }
     body {
         width: 375px;
