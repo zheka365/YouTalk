@@ -2838,7 +2838,7 @@ article {
     .content__article_p {
         margin-top: 9px;
         width: 356px;
-        height: 330px;
+        height: 280px;
     }
 }
 
@@ -3076,7 +3076,7 @@ article {
     .side-bar {
         width: 356px;
         height: 512px;
-        top: 6671px;
+        top: 6625px;
         left: 16px;
     }
     .side-bar__img1 {
@@ -3102,7 +3102,7 @@ article {
     .side-bar-2 {
         width: 356px;
         height: 481px;
-        top: 7210px;
+        top: 7165px;
         left: 16px;
         gap: 0px;
         opacity: 0px;
@@ -3145,7 +3145,7 @@ article {
         display: flex;
         width: 356px;
         height: 292px;
-        top: 7720px;
+        top: 7675px;
         left: 16px;
         position: absolute;
     }
@@ -3163,7 +3163,7 @@ article {
         height: 252px;
     }
     .side-bar-4 {
-        top: 8045px;
+        top: 7995px;
         left: 16px;
     }
     .side-bar__item-h4 {
