@@ -227,6 +227,7 @@ body {
     padding: 14px 20px 14px 20px;
     font-size: 16px;
     letter-spacing: 0.3px;
+    border-radius: 4px;
 }
 
 .header__line {
@@ -1818,6 +1819,7 @@ body {
     .blog__sorting {
         max-width: 3650px;
     } 
+
     /* первый ряд */
     .content {
         width: 350px;
