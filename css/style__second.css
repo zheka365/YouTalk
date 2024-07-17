@@ -75,18 +75,19 @@ p {
     list-style: none;
     text-decoration: none;
     color: #333333;
+    overflow-y: hidden;
+    
 }
-/* body {
-    border-right: 1px solid hsla(210, 60%, 96%, 1);
-    z-index: 100;
-} */
+body,
+article {
+    margin: 0 auto;
+    overflow-x: hidden;
+}
 
 /* основная часть */
 .container {
-    width: 691px;
+    width: 1200px;
     margin: 0 auto;
-    margin-left: 125px;
-    justify-content: center;
 }
 
 .main {
@@ -104,6 +105,7 @@ p {
     justify-content: space-between;
     background-color: #FFFFFF;
     position: relative;
+    margin: 0 auto;
 }
 
 .header__liner {
@@ -214,18 +216,19 @@ p {
 .header__line {
     border: 1px solid #eff5fb;
     top: 76px;
-    width: 1440px;
+    width: 100%;
 }
 /* Ссылки — Главная, блог... */
 .nav {
     min-width: 110px;
     min-height: 18px;
-    margin-top: 14px;
+    margin: 0 auto;
 }
 
 .container__nav-item {
     top: 92px;
     margin-left: 5px;
+    margin-top: 14px;
 }
 
 .container__item {
@@ -261,12 +264,13 @@ p {
     text-decoration: none;
     font-weight: 700;
     color: #333333;
+    overflow-y: hidden;
 }
 
 .about__autor {
     display: inline-flex;
     gap: 8px;
-    width: 240px;
+    width: 340px;
     height: 20px;
     margin-top: 7px;
     letter-spacing: -0.15px;
@@ -281,7 +285,7 @@ p {
 .article {
     gap: 8px;
     display: flex;
-    width: 1440px;
+    /* width: 1440px; */
     margin-top: 60px;
 }
 
@@ -354,6 +358,7 @@ p {
     margin-top: 15px;
     width: 688px;
     letter-spacing: -0.03px;
+    overflow-y: visible;
 }
 /* цитата */
 .content__article-quote {
@@ -457,6 +462,7 @@ p {
     width: 691px;
     height: 96px;
     margin-top: 25px;
+    overflow-y: visible;
 }
 
 .psy__p {
@@ -490,10 +496,15 @@ p {
 .task__p {
     position: relative;
     z-index: 100;
+    width: 690px;
 }
 /* портрет */
 .portrait {
     margin-top: 24px;
+}
+
+.portrait__p {
+    width: 390px;
 }
 
 .portrait__item {
@@ -508,6 +519,9 @@ p {
 .qualities {
     margin-top: 24px;
 }
+.qualities__p {
+    width: 690px;
+}
 /* упражнение №1 */
 .exercise {
     display: block;
@@ -519,6 +533,7 @@ p {
     height: 224px;
     background-color: hsla(47, 87%, 96%, 1);
     border-radius: 16px;
+    width: 690px;
 }
 
 .exercise__h5 {
@@ -528,6 +543,7 @@ p {
 
 .exercise__p {
     height: 144px;
+    overflow-y: visible;
 }
 /* about anxiety */
 .about__anxiety__h3-p {
@@ -576,13 +592,17 @@ p {
 
 .hands__p {
     height: 144px;
+    width: 390px;
+    overflow-y: hidden;
 }
 
 .text__hands {
     margin-top: 24px;
 }
 /* текст после рук */
-
+.text__hands-p {
+    width: 690px;
+}
 /* упражнение №2 */
 .exercise2 {
     display: block;
@@ -594,6 +614,8 @@ p {
     height: 224px;
     background-color: hsla(25, 100%, 96%, 1);
     border-radius: 16px;
+    width: 690px;
+    /* margin: 0 auto; */
 }
 /* галерея */
 .lightning {
@@ -626,14 +648,22 @@ p {
     margin-top: 24px;
 }
 /* значок молнии */
+.container__lightning {
+    width: 690px;
+    margin: 0 auto;
+}
 .lightning__svg {
-    width: 178.75px;
+    /* width: 178.75px; */
     height: 32px;
     color: hsla(49, 100%, 65%, 1);
 }
 
 .lightning__icon {
     margin-top: 21px;
+}
+
+.after-svg {
+    width: 690px;
 }
 /* упражнение №3 */
 .exercise3 {
@@ -646,6 +676,7 @@ p {
     height: 224px;
     background-color: hsla(176, 97%, 35%, 0.1);
     border-radius: 16px;
+    width: 690px;
 }
 /* категории */
 .categories__emotions {
@@ -701,7 +732,7 @@ p {
 }
 
 .line__above {
-    width: 1200px;
+    width: 100%;
     border: 1px solid hsla(0, 0%, 87%, 1);
 }
 
@@ -710,7 +741,7 @@ p {
     position: absolute;
     width: 520px;
     height: 330px;
-    left: 775px;
+    right: 10%;
 }
 
 .people__item {
@@ -726,6 +757,7 @@ p {
 .people__h1 {
     letter-spacing: 1.2px;
     height: 112px;
+    overflow-y: hidden;
 }
 
 .people__p {
@@ -765,7 +797,8 @@ p {
     position: absolute;
     width: 272px;
     height: 240px;
-    left: 1271px;
+    /* left: 1271px; */
+    right: 0;
     z-index: -1;
 }
 
@@ -773,13 +806,14 @@ p {
     position: absolute;
     width: 686px;
     height: 606px;
-    left: 991px;
+    /* left: 991px; */
+    right: 0;
     top: 2480px;
     z-index: -1;
 }
 /* <!-- синее пятно --> */
 .blue__spot-img {
-    width: 1440px;
+    width: 100%;
     height: 672px;
     top: 5329px;
     position: absolute;
@@ -790,7 +824,7 @@ p {
     width: 282px;
     height: 512px;
     top: 164px;
-    left: 1042px;
+    right: 10vw;
     gap: 0px;
     border-radius: 16px;
     background-color: hsla(214, 85%, 95%, 1);
@@ -853,7 +887,7 @@ p {
     width: 282px;
     height: 481px;
     top: 700px;
-    left: 1042px;
+    right: 10vw;
     border-radius: 16px;
     background-color: hsla(210, 60%, 96%, 1);
     position: absolute;
@@ -1041,12 +1075,20 @@ p {
 .side-bar-4 {
     position: absolute;
     top: 1543px;
-    left: 1042px;
     overflow: hidden;
     border-radius: 24px;
     display: flex;
 }
-
+@media screen and (min-width: 1201px) {
+    .side-bar-4 {
+        right: 10vw;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .side-bar-4 {
+        left: 1042px;
+    }
+}
 .side-bar__item-4 {
     border: 1px solid hsla(0, 0%, 87%, 1);
     background-color: hsla(0, 0%, 100%, 1);
@@ -1128,6 +1170,7 @@ p {
 .footer__container {
     display: flex;
     margin: 0 auto;
+    width: 100%;
 }
 
 .footer__main-info {
@@ -1247,6 +1290,7 @@ p {
 
 .third-party-link {
     display: flex;
+    overflow: hidden;
 }
 
 .footer__list {
@@ -1328,6 +1372,10 @@ p {
         margin-left: 32px;
         width: 714px;
     }
+    body {
+        width: 1024px;
+        overflow-x: hidden;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1351,7 +1399,7 @@ p {
 
 @media screen and (min-width: 1300px) {
     .header__btn {
-        margin-right: 76px;
+        margin-right: 170px;
     }
 }
 
@@ -1515,8 +1563,8 @@ p {
 
 @media screen and (min-width: 1201px) {
     .lightning__icon {
-        left: 31%;
-        transform: translateX(-30%);
+        /* left: 50%;
+        transform: translateX(-50%); */
         position: absolute;
     }
 }
@@ -1574,9 +1622,9 @@ p {
         top: 683px;
         left: 770px;
     }
-    .side-bar__list-2 {
+    /* .side-bar__list-2 {
         max-width: 222px;
-    }
+    } */
     .side-bar__href-1 {
         position: absolute;
         display: flex;
@@ -1613,6 +1661,9 @@ p {
     .side-bar__h5 {
         margin-left: 15px;
     }
+    body {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1621,18 +1672,19 @@ p {
         gap: 9px;
     }
     .side-bar__susceptibility {
-        width: 220px;
+        max-width: 320px;
         display: flex;
         flex-wrap: wrap;
         gap: 4px;
         
     }
     .susceptibility__p {
-        width: 150px;
+        /* width: 150px; */
         max-height: 40px;
         display: flex;
         flex-wrap: wrap;
         gap: 4px;
+        overflow-x: hidden;
     }
 
     .side-bar__btn-2 {
@@ -1665,7 +1717,7 @@ p {
         width: 282px;
         height: 292px;
         top: 1209px;
-        left: 1041px;
+        right: 10vw;
     }
     .open1 {
         display: flex;
@@ -1780,9 +1832,7 @@ p {
         margin-left: 38px;
         margin-top: 2px;
     }
-    .footer__container {
-        width: 1024px;
-    }
+
     .footer__input {
         max-width: 471px;
     }
@@ -1794,9 +1844,10 @@ p {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
     .footer__container {
         margin-left: 120px;
+        width: auto;
     }
 }
 
@@ -1806,9 +1857,7 @@ p {
         margin-left: 3px;
         margin-top: 1px;
     }
-    .footer__container {
-        width: 1200px;
-    }
+
     .footer__input {
         max-width: 483px;
     }
@@ -1826,6 +1875,10 @@ p {
     .container {
         margin: 0 20px;
     }
+    body {
+        width: 768px;
+        overflow-x: hidden;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -1841,7 +1894,7 @@ p {
         position: absolute;
         min-width: 40px;
         min-height: 40px;
-        background: url(../image/burger.svg) no-repeat;
+        background: url(../image/svg__all/burger.svg) no-repeat;
         z-index: 3;
         right: 18px;
         top: 18px;
@@ -2038,23 +2091,23 @@ p {
         left: 392px;
     }
     .side-bar__list-2 {
-        min-width: 355px;
+        width: 355px;
         height: 481px;
     }
     .side-bar__face {
         margin-left: 100px;
     }
     .side-bar__h3-2 {
-        min-width: 353px;
+        width: 353px;
     }
     .side-bar__p-2 {
-        min-width: 353px;
+        width: 353px;
     }
     .side-bar__autor {
-        min-width: 350px;
+        width: 350px;
     }
     .side-bar__line {
-        min-width: 250px;
+        width: 250px;
     }
     .side-bar__content {
         width: 350px;
@@ -2070,7 +2123,7 @@ p {
 
 @media screen and (max-width: 900px) {
     .side-bar__susceptibility {
-        min-width: 353px;
+        width: 353px;
         max-height: 40px;
         display: flex;
         white-space: nowrap;
@@ -2120,6 +2173,7 @@ p {
     .side-bar-4 {
         top: 5309px;
         left: 393px;
+        width: 356px;
     }
     .side-bar__p-4 {
         width: 292px;
@@ -2145,11 +2199,10 @@ p {
         width: 247px;
         height: 184px;
         gap: 30px;
-        margin-left: 0;
+        margin-left: 20px;
         margin-top: -4px;
     }
     .footer__container {
-        width: 728px;
         height: 362px;
         margin: 0;
     }
@@ -2183,6 +2236,12 @@ p {
 /* iPhone 11 Pro Max "*/
 /* iPhone 11 Pro Max "*/
 @media screen and (max-width: 500px) {
+    body {
+        width: 414px;
+    }
+    .container {
+        width: 374px;
+    }
     .header__logo-logo {
         margin-left: 3px;
     }
@@ -2330,6 +2389,7 @@ p {
     }
     .anxiety__p {
         width: 342px;
+        overflow-y: visible;
     }
 }
 
@@ -2429,6 +2489,7 @@ p {
     }
     .hands__p {
         width: 374px;
+        overflow-y: visible;
     }
     .text__hands-p {
         width: 374px;
@@ -2625,7 +2686,6 @@ p {
         display: flex;
     }
     .footer__container {
-        width: 414px;
         height: 564px;
         margin: 0;
     }
@@ -2674,25 +2734,32 @@ p {
 /* medai iPhone SE "*/
 /* medai iPhone SE "*/
 /* medai iPhone SE "*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .container {
-        margin-left: 16px;
+        width: 356px;
+    }
+
+    body {
+        width: 375px;
+    }
+    article {
+        width: 375px;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .container__nav-item {
-        width: 288px;
+        width: 356px;
     }
     .blog__h1 {
-        width: 288px;
+        width: 356px;
         height: 96px;
         font-size: 24px;
         line-height: 32px;        
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .header {
         height: 56px;
     }
@@ -2705,7 +2772,7 @@ p {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .about__autor {
         margin-top: 0;
     }
@@ -2717,7 +2784,7 @@ p {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .article__h5 {
         margin-top: 17px;
     }
@@ -2726,23 +2793,23 @@ p {
         height: 152px;
     }
     .mother__h6-name {
-        width: 256px;
+        width: 356px;
         height: 96px;
     }
     .moter__h6-4 {
-        width: 288px;
+        width: 356px;
     }
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 401px) {
     .mother__problem {
         margin-top: 17px;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .article__img {
-        width: 288px;
+        width: 356px;
         height: 160px;
     }
     .mother__img-1,
@@ -2753,7 +2820,7 @@ p {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .content__article_h3 { 
         font-size: 18px;
         font-weight: 700;
@@ -2766,32 +2833,32 @@ p {
     }
     .content__article_p {
         margin-top: 9px;
-        width: 288px;
+        width: 356px;
         height: 330px;
     }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:400px) {
     .content__article-quote {
         margin-top: 6px;
     }
     .content__quote {
-        width: 288px;
-        height: 290px;
+        width: 356px;
+        height: 220px;
     }
     .quote__p {
-        width: 256px;
+        width: 356px;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .anxiety {
         margin-top: 14px;
     }
     .anxiety__h3 {
         font-size: 18px;
         line-height: 26px;
-        width: 228px;
+        width: 258px;
     }
     .anxiety__dott-img {
         margin-top: 10px;
@@ -2801,38 +2868,39 @@ p {
     }
     .anxiety__p {
         margin-top: 10px;
-        width: 256px;
-        height: 216px;
+        width: 326px;
+        height: 180px;
     }
     .anxiety__p2 {
-        width: 256px;
+        width: 356px;
         height: 240px;
-        margin-top: 154px;
+        margin-top: 124px;
     }
 }
 
-@media screen and (max-width: 375px) {
-    .hypnosis {
-        margin-top: 61px;
-    }
+@media screen and (max-width: 400px) {
+    /* .hypnosis { */
+        /* margin-top: 41px; */
+    /* } */
     .hypnosis__img {
-        width: 288px;
+        width: 356px;
         height: 160px;
     }
     .hypnosis__p {
         margin-top: 18px;
-        width: 288px;
+        width: 356px;
         height: 216px;
     }
     .psy__pt {
         margin-top: 122px;
-        left: 29%;
+        left: 33%;
         top: -90%;
-        width: 288px;
+        width: 356px;
         height: 168px;
     }
     .psy__p {
         height: 160px;
+        margin-top: 0;
     }
     .psy__img {
         left: 29%;
@@ -2840,31 +2908,31 @@ p {
     }
     .task__p {
         margin-top: 1px;
-        width: 288px;
+        width: 356px;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .portrait__img {
-        width: 288px;
+        width: 356px;
         height: 380px;
     }
     .qualities__p {
-        width: 288px;
+        width: 356px;
     }
     .portrait__p {
-        width: 288px;
+        width: 356px;
     }
     .portrait__item {
         flex-wrap: wrap;
-        width: 288px;
+        width: 356px;
     }
     .portrait {
         margin-top: 16px;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .exercise {
         margin-top: 16px;
     }
@@ -2872,20 +2940,20 @@ p {
         margin-top: 15px;
     }
     .about__anxiety__h3-p {
-        width: 288px;
-        height: 524px;
+        width: 356px;
+        height: 424px;
     }
     .about__anxiety-item {
-        width: 288px;
+        width: 356px;
     }
     .about__anxiety__h3 {
-        width: 288px;
+        width: 356px;
         font-size: 18px;
         line-height: 26px;
     }
     .about__anxiety__p {
-        width: 288px;
-        height: 216px;
+        width: 356px;
+        height: 176px;
         margin-top: 9px;
     }
 
@@ -2894,7 +2962,7 @@ p {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .hands {
         margin-top: 16px;
     }
@@ -2903,93 +2971,94 @@ p {
         width: 288;
     }
     .hands__img {
-        width: 288px;
+        width: 356px;
         height: 160px;
     }
     .hands__p {
-        width: 288px;
+        width: 356px;
         height: 168px;
     }
     .text__hands-p {
-        width: 288px;
+        width: 356px;
     }
     .text__hands {
         margin-top: 16px;
     }
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 400px) {
     .text_hands {
         margin-top: 24px;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .qualities {
         margin-top: 16px;
     }
     .exercise__task {
-        width: 288px;
-        height: 424px;
+        width: 356px;
+        height: 346px;
     }
     .exercise__h5 {
         margin-left: 16px;
     }
     .exercise__p {
-        width: 256px;
+        width: 324px;
+        height: 324px;
     }
     .exercise__task2 {
-        width: 288px;
-        height: 424px;
+        width: 356px;
+        height: 354px;
     }
     .exercise2 {
         margin-top: 16px;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .lightning {
         margin-top: 16px;
     }
     .lightning__img {
-        width: 288px;
+        width: 356px;
         height: 235px;
     }
     .lightning__img-2 {
-        margin-top: 32px;
+        /* margin-top: 32px; */
         object-fit: cover;
     }
     .chair__p {
-        width: 288px;
-        height: 216px;
+        width: 356px;
+        height: 176px;
         margin-top: 8px;
     }
     .lightning__item {
-        width: 288px;
+        width: 356px;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .lightning__icon {
         left: 38%;
-        margin-top: 76px;
+        /* margin-top: 76px; */
     }
 }
 
-@media screen and (max-width: 375px) {
-    .text__after-svg {
-        margin-top: 95px;
-    }
+@media screen and (max-width: 400px) {
+    /* .text__after-svg { */
+        /* margin-top: 95px; */
+    /* } */
     .after-svg {
-        width: 288px;
-        height: 264px;
+        width: 356px;
+        height: 204px;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .exercise__task3 {
-        width: 288px;
-        height: 424px;
+        width: 356px;
+        height: 346px;
     }
     .exercise__task3 {
         margin-top: 16px;
@@ -2999,72 +3068,83 @@ p {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .side-bar {
-        width: 288px;
+        width: 356px;
         height: 512px;
-        top: 7448px;
+        top: 6671px;
         left: 16px;
     }
     .side-bar__img1 {
-        margin-left: 16px;
+        margin-left: 70px;
     }
     .side-bar__h3-1 {
         margin-left: 1px;
-        width: 288px;
+        width: 356px;
     }
     .side-bar__p {
         margin-left: 25px;
-        width: 239px;
+        width: 324px;
 
     }
     .side-bar__btn {
-        margin-left: 25px;
+        margin-left: 68px;
         min-width: 238px;
         margin-top: 46px;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .side-bar-2 {
-        width: 288px;
+        width: 356px;
         height: 481px;
-        top: 7984px;
+        top: 7284px;
         left: 16px;
         gap: 0px;
         opacity: 0px;
     }
     .side-bar__list-2 {
-        min-width: 288px;
+        width: 356px;
     }
     .side-bar__face {
-        margin-left: 67px;
+        margin-left: 115px;
     }
     .side-bar__h3-2 {
-        min-width: 288px;
+        min-width: 356px;
     }
     .side-bar__p-2 {
-        min-width: 288px;
+        min-width: 356px;
     }
     .side-bar__autor {
-        min-width: 288px;
+        min-width: 356px;
     }
     .side-bar__content {
         margin-left: -33px;
+        width: 356px;
+        overflow-x: visible;
     }
     .side-bar__btn-2 {
-        margin-left: 18px;
+        margin-left: 58px;
+    }
+    .side-bar__susceptibility {
+        width: 388px;
+        /* white-space: nowrap; */
+        flex-wrap: nowrap;
+    }
+    .side-bar__line {
+        width: 350px;
     }
 }
-
-@media screen and (max-width: 375px) {
+/*  */
+@media screen and (max-width: 400px) {
     .open5 {
         display: flex;
-        width: 288px;
+        width: 356px;
         height: 292px;
-        top: 8489px;
-        left: 16px;        
+        top: 7789px;
+        left: 16px;
         position: absolute;
+
     }
     .open1,
     .open2,
@@ -3074,13 +3154,13 @@ p {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .side-bar__item-4 {
-        width: 288px;
+        width: 356px;
         height: 252px;
     }
     .side-bar-4 {
-        top: 8805px;
+        top: 8105px;
         left: 16px;
     }
     .side-bar__item-h4 {
@@ -3111,46 +3191,45 @@ p {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .footer {
         margin-top: 1616px;
     }
     .footer__about-us {
-        width: 288px;
+        width: 356px;
         height: 184px;
         margin-left: 18px;
     }
     .footer__container {
-        width: 414px;
         height: 564px;
         margin: 0;
     }
     .text-field {
-        width: 288px;
+        width: 356px;
     }
     .text-field__label {
-        width: 288px;
+        width: 356px;
         margin-top: 2px;
     }
     .text-field__group {
-        width: 288px;
+        width: 350px;
     }
     .footer__input {
         margin-left: 19px;
         margin-top: 21px;
-        width: 288px;
+        width: 356px;
         height: 200px;
         flex-wrap: nowrap;
     }
     .footer__text {
         margin-top: 4px;
-        width: 288px;
+        width: 356px;
     }
     .footer__main-info {
         flex-wrap: wrap;
     }
     .line {
-        width: 288px;
+        width: 356px;
         margin-left: 18px;
     }
     .footer__third-party-links {
