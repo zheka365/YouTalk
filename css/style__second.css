@@ -687,6 +687,7 @@ article {
 
 .categories__emotions-list {
     display: flex;
+    width: 690px;
 }
 
 .categories__emotions-item {
