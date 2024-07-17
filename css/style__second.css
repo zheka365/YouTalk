@@ -1675,7 +1675,7 @@ article {
     .side-bar__susceptibility {
         max-width: 320px;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         gap: 4px;
         
     }
@@ -1847,8 +1847,8 @@ article {
 
 @media screen and (min-width: 1201px) {
     .footer__container {
-        margin-left: 120px;
-        width: auto;
+        /* margin-left: 120px; */
+        width: 1200px;
     }
 }
 
@@ -2100,12 +2100,15 @@ article {
     }
     .side-bar__h3-2 {
         width: 353px;
+        margin: 108px auto 0;
     }
     .side-bar__p-2 {
         width: 353px;
+        margin: 4px auto 0;
     }
     .side-bar__autor {
         width: 350px;
+        margin: 4px auto 0;
     }
     .side-bar__line {
         width: 250px;
@@ -2205,7 +2208,7 @@ article {
     }
     .footer__container {
         height: 362px;
-        margin: 0;
+        /* margin: 0; */
     }
     .footer__input {
         margin-top: -4px;
@@ -2605,7 +2608,7 @@ article {
         left: 20px;
     }
     .side-bar__list-2 {
-        min-width: 374px;
+        width: 374px;
     }
     .side-bar__face {
         margin-left: 110px;
@@ -2688,7 +2691,7 @@ article {
     }
     .footer__container {
         height: 564px;
-        margin: 0;
+        /* margin: 0; */
     }
     .footer__input {
         margin-left: 19px;
@@ -3099,7 +3102,7 @@ article {
     .side-bar-2 {
         width: 356px;
         height: 481px;
-        top: 7284px;
+        top: 7210px;
         left: 16px;
         gap: 0px;
         opacity: 0px;
@@ -3142,10 +3145,9 @@ article {
         display: flex;
         width: 356px;
         height: 292px;
-        top: 7789px;
+        top: 7720px;
         left: 16px;
         position: absolute;
-
     }
     .open1,
     .open2,
@@ -3161,7 +3163,7 @@ article {
         height: 252px;
     }
     .side-bar-4 {
-        top: 8105px;
+        top: 8045px;
         left: 16px;
     }
     .side-bar__item-h4 {
@@ -3203,7 +3205,7 @@ article {
     }
     .footer__container {
         height: 564px;
-        margin: 0;
+        /* margin: 0; */
     }
     .text-field {
         width: 356px;
