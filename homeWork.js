@@ -1,9 +1,9 @@
 // Задание 6.6.1
-function word(str) {
+function isPalindrome (str) {
     str = str.toUpperCase();
     return str === str.split('').reverse().join('');
 }
-const check = word('Слово');
+const check = isPalindrome ('Слово');
 console.log(check ? 'Ваше слово — Палиндром' : 'Ваше слово — Не палиндром');
 
 // Задание 6.6.2
