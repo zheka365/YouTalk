@@ -1,12 +1,21 @@
 // Задание 6.6.1
 
 
-function word(str) {
-    str = str.toUpperCase();
-    return str === str.split('').reverse().join('');
+const word = "авава"; 
+let isPalindrome = true;
+
+for (let i = 0; i < word.length / 2; i++) {
+  if (word[i] !== word[word.length - 1 - i]) {
+    isPalindrome = false;
+    break;
+  }
 }
-let check = word('Слово');
-console.log(check ? 'Ваше слово — Палиндром' : 'Ваше слово — Не палиндром');
+
+if (isPalindrome) {
+  console.log("Слово является палиндромом");
+} else {
+  console.log("Слово не является палиндромом");
+}
 
 
 // Задание 6.6.2
