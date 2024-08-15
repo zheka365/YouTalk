@@ -1,6 +1,5 @@
 // Задание 6.6.1
 
-
 const word = "авава"; 
 let isPalindrome = true;
 
@@ -16,7 +15,13 @@ if (isPalindrome) {
 } else {
   console.log("Слово не является палиндромом");
 }
-
+// /............... .
+function word(str) {
+    str = str.toUpperCase();
+    return str === str.split('').reverse().join('');
+}
+let check = word('Слово');
+console.log(check ? 'Ваше слово — Палиндром' : 'Ваше слово — Не палиндром');
 
 // Задание 6.6.2
 const arr = [1, 2, 3, 1, 5, 4, 2, 3, 5, 'they', 'don\'t', 'know', 'that', 'we', 'know', 'that', 'they', 'know' ]; 
