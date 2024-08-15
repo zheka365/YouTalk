@@ -1,31 +1,14 @@
 // Задание 6.6.1
-
-const word = "авава"; 
-let isPalindrome = true;
-
-for (let i = 0; i < word.length / 2; i++) {
-  if (word[i] !== word[word.length - 1 - i]) {
-    isPalindrome = false;
-    break;
-  }
-}
-
-if (isPalindrome) {
-  console.log("Слово является палиндромом");
-} else {
-  console.log("Слово не является палиндромом");
-}
-// /............... .
 function word(str) {
     str = str.toUpperCase();
     return str === str.split('').reverse().join('');
 }
-let check = word('Слово');
+const check = word('Слово');
 console.log(check ? 'Ваше слово — Палиндром' : 'Ваше слово — Не палиндром');
 
 // Задание 6.6.2
 const arr = [1, 2, 3, 1, 5, 4, 2, 3, 5, 'they', 'don\'t', 'know', 'that', 'we', 'know', 'that', 'they', 'know' ]; 
-let arrNew = new Set(arr);
+const arrNew = new Set(arr);
 console.log(Array.from(arrNew));
 
 // Задание 6.6.3
@@ -34,8 +17,8 @@ console.log(Array.from(arrNew));
 // заполните его числами от нуля до введённого числа. Не забудьте привести полученное 
 // от пользователя значение к типу number.
 
-let number = +prompt('Введите любое число');
-let result = [];
+const number = +prompt('Введите любое число');
+const result = [];
     for (let i = 1; i <= number; i ++) {
         result.push(i);
     }  
@@ -48,7 +31,7 @@ console.log(result)
 // x o x
 
 const borderSize = 3;
-let border = [];
+const border = [];
 for (let i = 0; i < borderSize; i ++) {
     let row = [];
     for (let k = 0; k < borderSize; k ++) {
