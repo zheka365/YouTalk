@@ -1,1 +1,63 @@
+// Задание 7.7.1
 
+const person = { name: "John", age: 30 };
+
+function printInfo() {
+    console.log(`Name: ${this.name}, Age: ${this.age}`);
+}
+printInfo.call(person);
+
+// Задание 7.7.2
+
+function calculate(a, b, operator) {
+    switch(operator) {
+        case '+': 
+            return a + b
+        case '-': 
+            return a - b
+        case '*': 
+            return a * b
+        case '/': 
+            return a / b
+        default:
+            return null
+    }
+}
+const result = calculate.apply(null, [2, 3, "+"]);
+console.log(result);
+
+// Задание 7.7.3
+
+const users = [
+    {name: 'Jon', age: 30},
+    {name: 'Sara', age: 20},
+    {name: 'Ferro', age: 55},
+    {name: 'Bob', age: 10},
+    {name: 'Lora', age: 15},
+    {name: 'Nina', age: 17}
+];
+const userAdult = users.filter(user => user.age >= 18);
+const userFilter = userAdult.map(user => user.name);
+
+console.log(userFilter);
+
+// Задание 7.7.4
+
+function setFullName(fullName) {
+    this.fullName = fullName
+}
+const person = {
+    firstName: 'John',
+    lastName: 'Storm',
+  };
+const setPersonFullName = setFullName.bind(person);
+setPersonFullName('John Smith');
+console.log(person.fullName);
+
+// Задание 7.7.5
+
+const nums = [25, 77, 87, 20, 53, 11, 77, 92, 87, 52, 17, 77, 20, 54];
+
+const uniqNums = [...new Set(nums)];
+const sortNums = uniqNums.sort((a, b) => a - b);
+console.log(sortNums);
