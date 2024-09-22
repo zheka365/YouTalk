@@ -1,0 +1,119 @@
+/* Задание 1 */
+
+.btn {
+    width: 200px;
+    height: 100px;
+}
+
+
+/* Задание 2 */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 800px;
+    height: 400px;
+    border-radius: 100px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: rgba(207, 207, 207, 0.774);
+}
+
+h1 {
+    font-size: 120px;
+}
+
+/* Задание 3 */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+
+#input-container {
+    display: flex;
+    width: 522px;
+    gap: 5px;
+}
+
+#chat-window {
+    width: 500px;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: scroll;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chat-window div {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#chat-window div:last-child {
+    border-bottom: none;
+}
+
+#message-input {
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#send-button {
+    width: 90px;
+    height: 52px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #3e8e41;
+}
+
+#geo {
+    width: 40px;
+    height: 52px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+#geo:hover {
+    background-color: #3e8e41;
+}
