@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Книжный магазин</title>
+  <script defer src="bundle.js"></script></head>
+
+  <body>
+    <header>
+      <div class="header__container">
+        <div class="header__logo">Bookshop</div>
+        <nav class="header__menu">
+          <ul class="menu__list">
+            <li><a href="#">books</a></li>
+            <li><a href="#">audiobooks</a></li>
+            <li><a href="#">Stationery & gifts</a></li>
+            <li><a href="#">blog</a></li>
+          </ul>
+        </nav>
+        <div class="header__icons">
+          <a href="#" class="header__profile"></a>
+          <a href="#" class="header__search"></a>
+          <a href="#" class="header__by"><span class="cart_counter"></span></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="img-slider">
+        <div class="container">
+          <div class="images"></div>
+          <div class="promo__block-first">
+            <h2 class="promo__text">Change old book on new</h2>
+          </div>
+
+          <div class="promo__block-second">
+            <h2 class="promo__text">top 100 books 2022</h2>
+          </div>
+          <div class="arrow left">&lt;</div>
+          <div class="arrow right">&gt;</div>
+        </div>
+      </div>
+      <div class="option-toggle">
+        <div class="toggle">
+          <div class="dots"></div>
+        </div>
+      </div>
+    </main>
+    <!-- Books -->
+    <section class="categories__book">
+      <div class="container">
+        <div class="category__container">
+          <div class="categories">
+            <div class="list__container">
+              <ul class="categories_list">
+                <li class="categories_link active" data-category="Architecture">
+                  <a href="#">Architecture</a>
+                </li>
+                <li class="categories_link" data-category="Art">
+                  <a href="#">Art & Fashion</a>
+                </li>
+                <li
+                  class="categories_link"
+                  data-category="Biography & Autobiography"
+                >
+                  <a href="#">Biography</a>
+                </li>
+                <li class="categories_link" data-category="Business">
+                  <a href="#">Business</a>
+                </li>
+                <li class="categories_link" data-category="Crafts & Hobbies">
+                  <a href="#">Crafts & Hobbies</a>
+                </li>
+                <li class="categories_link" data-category="Drama">
+                  <a href="#">Drama</a>
+                </li>
+                <li class="categories_link" data-category="Fiction">
+                  <a href="#">Fiction</a>
+                </li>
+                <li class="categories_link" data-category="Cooking">
+                  <a href="#">Food & Drink</a>
+                </li>
+                <li class="categories_link" data-category="Health & Fitness">
+                  <a href="#">Health & Wellbeing</a>
+                </li>
+                <li class="categories_link" data-category="History">
+                  <a href="#">History & Politics</a>
+                </li>
+                <li class="categories_link" data-category="Humor">
+                  <a href="#">Humor</a>
+                </li>
+                <li class="categories_link" data-category="Poetry">
+                  <a href="#">Poetry</a>
+                </li>
+                <li class="categories_link" data-category="Psychology">
+                  <a href="#">Psychology</a>
+                </li>
+                <li class="categories_link" data-category="Science">
+                  <a href="#">Science</a>
+                </li>
+                <li class="categories_link" data-category="Technology">
+                  <a href="#">Technology</a>
+                </li>
+                <li class="categories_link" data-category="Travel">
+                  <a href="#">Travel & Maps</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="cards__container">
+          <div class="cards_block"></div>
+        </div>
+      </div>
+
+      <svg style="display: none">
+        <symbol id="star-active" viewBox="0 0 24 24">
+          <path
+            fill="#ffd700"
+            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+          />
+        </symbol>
+        <symbol id="star-inactive" viewBox="0 0 24 24">
+          <path
+            fill="lightgray"
+            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+          />
+        </symbol>
+      </svg>
+      <div id="rating-container"></div>
+
+      <button class="load_btn">load more</button>
+    </section>
+  </body>
+</html>
